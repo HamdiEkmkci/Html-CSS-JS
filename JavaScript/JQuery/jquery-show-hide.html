@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+     
+</head>
+
+<body>
+
+
+    <p>Sıfırdan ileri düzey web geliştirme</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    
+
+    <script>
+        
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide(500, function(){
+                    alert("paragraf nereye gitti ?");
+                });
+            });
+
+            $("#show").click(function(){
+                $("p").show(500);
+            });
+
+            $("#toggle").click(function(){
+                $("p").toggle("fast");
+            });
+        });
+
+        // $(selector).show or hide or toggle(speed,callback);
+        
+
+    </script>
+</body>
+
+</html>

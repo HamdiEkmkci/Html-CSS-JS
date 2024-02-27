@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <style>
+        .colorfull{
+            color: purple;
+            font-size: 22px;
+        }
+    </style>    
+</head>
+
+<body>
+
+    <p id="p1"> Zero to Hero Web Design</p>
+    <p id="p2"> Zero to Hero Web Design</p>
+    <p class="paragraph"> Zero to Hero Web Design</p>
+    <p class="paragraph"> Zero to Hero Web Design</p>
+
+    <script>
+        
+        $(document).ready(function (){
+            $(".paragraph").click(function(){
+                // $("#p1").addClass("colorfull");
+                $(this).addClass("colorfull");
+                // there is two paragraph and this add just to clicking paragraph.
+            })
+        });
+        
+        
+        
+        
+        // $(function(){
+        //     $("selector").click(function (){
+        //         console.log("click");
+        //     })
+        // })
+        
+
+    </script>
+</body>
+
+</html>

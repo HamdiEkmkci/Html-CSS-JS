@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        .highlight{
+            background-color: gray;
+        }
+        .orange{
+            background-color: orange;
+        }
+    </style>    
+</head>
+
+<body>
+
+    <a href="#">Link1</a>
+    <h3 id="header">My Courses</h3>
+    <ul id="list">
+        <li class="item1">Zero to Hero Web Design</li>
+        <li>Python - Zero to Hero Programming <a href="#">here</a> </li>
+        <li>Android and IOS App. Develeopement</li>
+    </ul>
+
+    <input id="name" type="text" placeholder="Name:">
+    <input id="sirname" type="text" placeholder="Sirname:">
+    <button id="btnRegister" onclick="register()">Register</button>
+
+    <script>
+        
+        //get
+        console.log($("h3").text());
+        
+        console.log($("ul li").text());
+
+        //set
+        $("h3").text("Usefull Courses");
+
+        // val method
+        function register(){
+            var name = $("#name").val();
+            var sirname = $("#sirname").val();
+
+            console.log(name + " " + sirname +" registration is compeleted!");
+        }
+
+        // addClass
+        $("#name").addClass("highlight");
+        $("#name").removeClass("highlight");
+        $("#sirname").toggleClass("orange");
+
+        // attribute
+        // $("...").attr("width","...");
+
+    </script>
+</body>
+
+</html>

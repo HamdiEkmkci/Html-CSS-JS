@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+     
+</head>
+
+<body>
+
+
+    <form>
+
+
+        <p>
+            Name: <input class="control" type="text">
+        </p>
+
+        <p>
+            Your School : <select class="control">
+
+                <option value="ilkokul">İlkokul</option>
+                <option value="ortaokul">Ortaokul</option>
+                <option value="lise">Lise</option>
+                <option value="üniversite">Üniversite</option>
+
+            </select>
+        </p>
+
+
+
+    </form>
+    
+
+    <script>
+        
+        $(document).ready(function(){
+            $(".control").change(function(){
+                console.log($(this).val());
+            });
+        });
+
+        // başka biryere bastığında veya seçim yapıtğında 
+        //value ile değerini alıyor.
+        
+
+    </script>
+</body>
+
+</html>

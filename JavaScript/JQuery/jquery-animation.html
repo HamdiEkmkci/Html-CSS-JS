@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <style>
+        #box {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="animate">Animasyon</button>
+    <div id="box">
+
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#animate").click(function(){
+
+                $("#box").animate(
+                    {
+                        left:"200px",
+                        width:"300px",
+                        height:"300px",
+                    },
+                    3000
+                )
+                $("#box").animate({top:"200px",width:"1px",height:"1px"},"slow")
+
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

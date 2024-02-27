@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        div{
+            width: 300px;
+            height: 100px;
+            background-color: lightskyblue;
+            margin: 5px;
+            display: inline-flex;
+            position: relative; /**/
+        }
+
+        a{
+            display: block;
+            width: 33.3%;
+            text-align: center;
+            background-color: chartreuse;
+            position: absolute;
+            top: 10px;
+            margin-left: 5px;   
+        }
+
+        span{
+            display: block;
+            font-size: larger;
+        }
+
+
+        #kutu1{
+            position: relative;
+            left:50px;
+        }
+
+        #kutu2{
+            position: relative;
+            right:50px;
+        }
+
+        #container{
+            width: 100%;
+            background-color: grey;
+            overflow: hidden;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="kutu1">kutu1</div>
+    <div id="kutu2">kutu2</div><br>
+
+    <div id="container">
+    <div><a href="">Link1</a><br></div>
+    <div><a href="" style="position: relative;">Link2</a><br></div>
+    <div><a href="">Link3</a><br></div>
+    </div>
+    <br><br>
+
+    <span>Eğer position: relative; kullanılırsa bağlı olduğu yere göre konumlandırabilirsiniz</span>
+    <span style="color: darkblue;">Eğer position: absolute; kullanılırsa sayfaya göre konumlandırılır </span>
+    <span>Eğer Position: fixed; kullanılırsa konumlandırmaya göre olduğu yerde sabit kalır sayfa aşağıya inse bile sağ alttta kalır</span>
+    <span>Eğer Position: sticky; kullanılırsa sticky ile konumlandırılan yazılar sayfa aşağı indirilse bile sayfada gözükür.
+    </span>    
+
+
+
+
+</body>
+</html>

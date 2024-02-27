@@ -1,0 +1,99 @@
+/*
+p --> tüm p etiketleri 
+
+(div p ) --> div içerisindeki tüm p etiketleri
+
+(div,p) --> tüm div ve tüm p etiketeleri
+
+p + div --> p etiketinden sonra 
+gelen div etiketi
+
+etiketleri (class="") etiketi ile sınıflandırıp özellik ekleyebiliriz.
+
+
+GROUP SELECTORS
+
+*/
+
+/*       ATTRIBUTES SELECTOR       
+
+h2[title="baslik1"]{
+    color: red;
+}
+
+p[title="paragraf1"]{
+    color: blueviolet;
+    text-align: justify;
+}
+
+a[target="_blank"]{
+    color: aqua;
+
+}
+
+input[type="text"]{
+    background-color: grey;
+
+}
+
+ */
+
+
+/* Pseudo Element */
+
+p::first-line {
+    font-weight: bold;
+    color: black;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+
+}
+
+p::first-letter {
+    font-size: 30px;
+}
+
+/*  Pseudo Class */
+
+ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul li:first-child {
+    background-color: darkseagreen;
+}
+
+ul li:last-child {
+    background-color: wheat;
+}
+
+ul li:nth-child(2) {
+    background-color: crimson;
+}
+
+a:visited {
+    /*Ziyaret edilmişse özellik ver*/
+    color: fuchsia;
+}
+
+a:hover {
+    /*Linkin üstüne geldiğimizde nasıl göründüğünü belirler*/
+    color: black,;
+    background-color: rgb(210, 230, 173);
+}
+
+a {
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+ul li {
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 400px;
+}

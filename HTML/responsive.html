@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+
+    <style>
+        /*h1 {
+            font-size: 40px;
+
+        }
+
+        @media screen and (max-width:700px) {
+            h1{
+                font-size: 30px;
+            }
+        }
+        
+        @media screen and (max-width:400px){
+            h1{
+                font-size: 20px;
+                color: rgb(255, 103, 255);
+            }
+        }*/
+        
+        *{
+            box-sizing: border-box;
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+        .box {
+            background-color: lightskyblue;
+            width: 25%;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        @media screen and (max-width: 900px){
+            img{
+                width: 33.33%;
+                height: auto;
+            }
+        }
+
+        
+        @media screen and (max-width:700px){
+            .box{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:500px){
+            .box{
+                width: 100%;
+            }
+        }  
+    </style>
+
+</head>
+
+<body>
+    <!--  <h1>Lorem ipsum dolor sit amet consectetur.</h1>  ->dev.box = class'ı kutu olan div-->
+    <div class="box">
+        <img src="resimler/fener.png" alt="Fener_amblem">
+    </div>
+    <div class="box">
+        <img src="resimler/fener.png" alt="Fener_amblem"></div>
+    <div class="box">
+        <img src="resimler/fener.png" alt="Fener_amblem">
+    </div>
+    <div class="box">
+        <img src="resimler/fener.png" alt="Fener_amblem">
+    </div>
+</body>
+
+</html>

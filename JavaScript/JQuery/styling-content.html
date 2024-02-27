@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <a href="#">Link1</a>
+    <h3 id="header">My Courses</h3>
+    <ul id="list">
+        <li class="item1">Zero to Hero Web Design</li>
+        <li>Python - Zero to Hero Programming <a href="#">here</a> </li>
+        <li>Android and IOS App. Develeopement</li>
+    </ul>
+    
+    <script>
+        
+        // document.getElementById("header").style.color = "red";
+        
+        $("#header").css("color","orange");
+        
+        // $("#list a").css("text-decoration","none");
+        
+        $("a").css("text-decoration","none");
+
+        var styles = {
+            color:"blue",
+            fontSize:"22px",
+            border:"1px solid gray"
+        }
+
+        $("ul li").css(styles);
+
+
+        var lists = document.querySelectorAll("li");
+
+        for(var i = 0;i<lists.length;i++){
+            lists[i].style.color="lightblue";
+        }
+
+        $("a").css({
+            color:"green",
+            fontSize:"16px",
+            border:"2px solid blue"
+        });
+
+    </script>
+</body>
+
+</html>
